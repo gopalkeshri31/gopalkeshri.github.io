@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="GK.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>GK DEVS</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+    <nav class="navbar">
+        <div class="left">
+            <a class="navbar-brand" href="#"><B>GK Devs</B></a>
+        </div>
+        <div class="right">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <!-- header end -->
+    <!-- about us start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="gopal-pic.jpg" alt="" srcset="">
+                </div>
+                <div class="about-col-2">
+                    <h1 id="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at similique, quo praesentium perferendis quas id explicabo quod delectus in!</p>
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education') ">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web designer</span><br>information about UI/UX Designing</li>
+                            <li><span>Web Development</span><br>information about HTML CSS javascript and many web development framework</li>
+                            <li><span>App Development</span><br>Information about Dart, java, javascript and many app development framework </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021-22</span><br>As a freelancer. work role is Web designer and Web developer</li>
+                            <li><span>2022-23</span><br>As a freelancer. work role is App Development on flutter framework</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-21</span><br>12th Pass to 8 CGPA</li>
+                            <li><span>2021-22</span><br>BCA 1 year Pass to 7.9 CGPA</li>
+                            <li><span>2022-23</span><br>BCA 2 year Pass to 8.5 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <!-- about us end -->
+    <!-- footer start -->
+
+    <!-- footer end -->
+    <!-- <script> -->
+<script>
+  var x = document.getElementsByClassName("tab-links");
+  var y = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+          for(tablink of x){
+              tablink.classList.remove("active-link");
+      }
+      for(tabcontent of y){
+              tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+    <!-- </script> -->
+</body>
+
+</html>

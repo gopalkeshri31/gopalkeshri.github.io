@@ -384,3 +384,48 @@ form .btn{
 
 }
 /* contact us css end */
+.right .fa-solid{
+    display: none;
+}
+#GK{
+    background:linear-gradient(rgba(250, 246, 246, 0.6),#42828d);
+    border-radius: 4px;
+    color: #fcffff;
+    padding: 5px;
+}
+#GK:hover{
+    background:linear-gradient(rgba(228, 137, 137, 0.6),#6fd4e6);
+}
+@media only screen and (max-width:600px) {
+    .right ul{
+        background: #ff004f;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 20px;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .right ul li{
+        display: block;
+        margin: 15px;
+    }
+    .right ul i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: right 0.5s;
+    }
+    .right .fa-solid{
+        font-size: 26px;
+        display: block;
+        cursor: pointer;
+    }
+    .right .fa-solid:hover{
+        color: #8c63ec;
+    }
+}

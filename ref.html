@@ -5,104 +5,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="GK.png">
     <script src="https://kit.fontawesome.com/1ec93368b5.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>GK DEVS</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            font-size: 10px;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'poppins', sans-serif;
-        }
-        #sub-title {
-            font-size: 6rem;
-            font-weight: 600;
-            color: white;
-        }
-        .row{
-            display: flex;
-            margin: 30px 90px;
-        }
-        .contact-left{
-            flex-basis: 35%;
-        }
-        .contact-right{
-            flex-basis: 65%;
-        }
         
-        .contact-left p{
-            margin-top: 30px;
-        }
-        .contact-left p i{
-            color: #ff004f;
-            margin-right: 15px;
-            font-size: 25px;
-        }
-        .social-icons{
-            margin-top: 30px;
-        }
-        .social-icons a{
-            color: white;
-            text-decoration: none;
-            font-size: 3rem;
-            margin-right: 1.5rem;
-            display: inline-block;
-            transition: transform 0.5s;
-        }
-        .social-icons a:hover{
-            color: #ff004f;
-            transform: translateY(-5px)
-        }
-        .btn{
-            display: block;
-            margin: 50px auto;
-            width: fit-content;
-            border: 1px solid #ff004f;
-            padding:10px 40px;
-            border-radius: 6px;
-            text-decoration:none ;
-            color: beige;
-            font-size: 12px;
-        }
-        .btn.btn2{
-            display: inline-block;
-            background:#ff004f ;
-        }
-        .contact-right form{
-            width: 100%;
-        }
-        form input, form textarea{
-            width: 100%;
-            border: 0;
-            outline: none;
-            background: #262626;
-            padding: 12px;
-            margin: 10px 0;
-            color: #fff;
-            font-size: 15px;
-            border-radius: 6px;
-        }
-        form .btn{
-            padding: 14px 16px;
-            font-size: 18px;
-            margin-top:20px ;
-            cursor: pointer;
-
-        }
     </style>
 </head>
 
 <body>
+    <!-- header start -->
+    <header>
+    <nav class="navbar">
+        <div class="left">
+            <a class="navbar-brand" href="index.html"><B>GK Devs</B></a>
+        </div>
+        <div class="right">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contect.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <!-- header end -->
+    <!-- hero start -->
+    <div id="hero">
+    <section class="firstSection" >
+        <div class="leftSection">
+            Hi, My name is <span class="purple"><i>Gopal</i></span> 
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+            <div class="buttons">
+            <button class="btnb"><a href="">Download Resume</a></button>
+            <button class="btnb"><a href="">Visit Github</a></button>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="dev.png" alt="devs photo">
+        </div>
+    </section>
+    </div>
+    <!-- hero end -->
+    <hr>
+    <!-- about us start  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="gopal-pic.jpg" alt="" srcset="">
+                </div>
+                <div class="about-col-2">
+                    <h1 id="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at similique, quo praesentium perferendis quas id explicabo quod delectus in!</p>
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education') ">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web designer</span><br>information about UI/UX Designing</li>
+                            <li><span>Web Development</span><br>information about HTML CSS javascript and many web development framework</li>
+                            <li><span>App Development</span><br>Information about Dart, java, javascript and many app development framework </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021-22</span><br>As a freelancer. work role is Web designer and Web developer</li>
+                            <li><span>2022-23</span><br>As a freelancer. work role is App Development on flutter framework</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-21</span><br>12th Pass to 8 CGPA</li>
+                            <li><span>2021-22</span><br>BCA 1 year Pass to 7.9 CGPA</li>
+                            <li><span>2022-23</span><br>BCA 2 year Pass to 8.5 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <!-- about us end  -->
+    <hr>
+    <!-- services start  -->
+    <div id="services">
+        <div class="container">
+            <h1 id="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2><b>Web Design</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eum dolores esse veniam ex
+                        perferendis aliquam ab officiis assumenda maxime.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2><b>Web Development</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eum dolores esse veniam ex
+                        perferendis aliquam ab officiis assumenda maxime.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2><b>App Development</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eum dolores esse veniam ex
+                        perferendis aliquam ab officiis assumenda maxime.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services end -->
+    <hr>
+    <!-- Gallery start -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 id="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="dev.png" alt="img-1">
+                    <div class="layer">
+                        <h3>social media</h3>
+                        <p>Lorem ipsum dolor sit amet cons adipisicing elit. Nam, hic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="dev.png" alt="img-2">
+                    <div class="layer">
+                        <h3>social media</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="dev.png" alt="img-3">
+                    <div class="layer">
+                        <h3>social media</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery end -->
+    <hr>
+    <!-- Hire me start -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -130,9 +190,49 @@
             </div>
         </div>
     </div>
-    <script>
-
-    </script>
+    <!-- Hire me end -->
+    <hr>
+    <!-- footer start -->
+    <footer>
+        <div class="footer">
+            <div class="footer-1">
+                <h3>GK DEVELOPER</h3>
+                <H4>THE PORTFOLIO</H4>
+            </div>
+            <div class="footer-2">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+           Copyright &#169; www.gkdevs.xyz | All rights reserved
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- <script> -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+    <!-- </script> -->
 </body>
 
 </html>

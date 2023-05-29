@@ -57,7 +57,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items:center;
-    margin: 15rem 0;
+    margin: 8rem 0;
 }
 .firstSection >div{
     width: 30%;
@@ -99,7 +99,7 @@ hr{
     border: 0;
     background: rgb(168, 168, 222);
     height: 0.2rem;
-    margin: 6rem 8rem;
+    margin: 4rem 8rem;
 }
 /* end hero */
 /* about us css start */
@@ -234,3 +234,82 @@ footer .footer-rights{
     transform: translateY(-10px);
 }
 /* services css end  */
+/* portfolio css start  */
+#portfolio{
+    padding: 80px 0;
+    margin: 0 190px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform .5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: rgb(224, 31, 31);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+#sub-title {
+    font-size: 6rem;
+    font-weight: 600;
+    color: white;
+}
+/* portfolio css end  */
+/* contact us css start */
+
+/* contact us css end */

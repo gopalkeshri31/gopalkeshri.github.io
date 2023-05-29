@@ -24,112 +24,107 @@
             color: white;
             font-family: 'poppins', sans-serif;
         }
-
-        #portfolio{
-            padding: 80px 0;
-            margin: 60px 190px;
-        }
-
-        .work-list{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            grid-gap: 40px;
-            margin-top: 50px;
-        }
-
-        .work {
-            border-radius: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .work img {
-            width: 100%;
-            border-radius: 10px;
-            display: block;
-            transition: transform .5s;
-        }
-
-        .layer {
-            width: 100%;
-            height: 0;
-            background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
-            position: absolute;
-            border-radius: 10px;
-            left: 0;
-            bottom: 0;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            font-size: 14px;
-            transition: height 0.5s;
-        }
-
-        .layer h3 {
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-
-        .layer a {
-            margin-top: 20px;
-            color: rgb(224, 31, 31);
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 60px;
-            background: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            text-align: center;
-        }
-
-        .work:hover img {
-            transform: scale(1.1);
-        }
-
-        .work:hover .layer {
-            height: 100%;
-        }
-
         #sub-title {
             font-size: 6rem;
             font-weight: 600;
             color: white;
         }
+        .row{
+            display: flex;
+            margin: 30px 90px;
+        }
+        .contact-left{
+            flex-basis: 35%;
+        }
+        .contact-right{
+            flex-basis: 65%;
+        }
+        
+        .contact-left p{
+            margin-top: 30px;
+        }
+        .contact-left p i{
+            color: #ff004f;
+            margin-right: 15px;
+            font-size: 25px;
+        }
+        .social-icons{
+            margin-top: 30px;
+        }
+        .social-icons a{
+            color: white;
+            text-decoration: none;
+            font-size: 3rem;
+            margin-right: 1.5rem;
+            display: inline-block;
+            transition: transform 0.5s;
+        }
+        .social-icons a:hover{
+            color: #ff004f;
+            transform: translateY(-5px)
+        }
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #ff004f;
+            padding:10px 40px;
+            border-radius: 6px;
+            text-decoration:none ;
+            color: beige;
+            font-size: 12px;
+        }
+        .btn.btn2{
+            display: inline-block;
+            background:#ff004f ;
+        }
+        .contact-right form{
+            width: 100%;
+        }
+        form input, form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+        form btn2{
+            padding: 14px 16px;
+            font-size: 18px;
+            margin-top:20px ;
+            cursor: pointer;
+
+        }
     </style>
 </head>
 
 <body>
-    <div id="portfolio">
+    <div id="contact">
         <div class="container">
-            <h1 id="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="dev.png" alt="img-1">
-                    <div class="layer">
-                        <h3>social media</h3>
-                        <p>Lorem ipsum dolor sit amet cons adipisicing elit. Nam, hic.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>contact@gkdevs.xyz</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9409643361</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/keshrigopal31" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/keshrigopal.31" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/gopalkeshri" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gopal-keshri/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="work">
-                    <img src="dev.png" alt="img-2">
-                    <div class="layer">
-                        <h3>social media</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+                <a href="gopal-pic.jpg" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="work">
-                    <img src="dev.png" alt="img-3">
-                    <div class="layer">
-                        <h3>social media</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -51,8 +51,24 @@ nav ul li a:hover {
     color: white;
     
 }
+.right .fa-solid{
+    display: none;
+}
+#GK{
+    background:linear-gradient(rgba(250, 246, 246, 0.6),#42828d);
+    border-radius: 4px;
+    color: #fcffff;
+    padding: 5px;
+}
+#GK:hover{
+    background:linear-gradient(rgba(228, 137, 137, 0.6),#6fd4e6);
+}
 /* nav end */
 /* hero css */
+.rightSection img:hover{
+    transform: scale(1.1);
+   
+}
 .firstSection{
     display: flex;
     justify-content: space-around;
@@ -87,7 +103,6 @@ nav ul li a:hover {
 }
 .rightSection img{
     width: 90%;
-
 }
 .purple{
     color: rgb(103, 23, 179);
@@ -194,6 +209,13 @@ footer .footer-rights{
     text-align: center;
     color: gray;
     padding:12px 0 ;
+}
+.footer-link{
+    text-decoration: none;
+    color: #ece8e8;
+}
+.footer-link:hover{
+    color: #1d1b1b;
 }
 /* footer css end  */
 /* services css start  */
@@ -384,18 +406,7 @@ form .btn{
 
 }
 /* contact us css end */
-.right .fa-solid{
-    display: none;
-}
-#GK{
-    background:linear-gradient(rgba(250, 246, 246, 0.6),#42828d);
-    border-radius: 4px;
-    color: #fcffff;
-    padding: 5px;
-}
-#GK:hover{
-    background:linear-gradient(rgba(228, 137, 137, 0.6),#6fd4e6);
-}
+
 @media only screen and (max-width:600px) {
     .right ul{
         background: #ff004f;

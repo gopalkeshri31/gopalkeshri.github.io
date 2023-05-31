@@ -100,11 +100,9 @@ nav ul li a:hover {
     text-decoration: none;
     color: aliceblue;
  }
-.rightSection{
+.rightSection img{
     background-color: rgb(109, 109, 151);
     border-radius: 1rem;
-}
-.rightSection img{
     width: 90%;
 }
 .purple{
@@ -246,6 +244,12 @@ footer .footer-rights{
     border-radius: 1rem;
 }
 
+.services-list div h2{
+    color: rgb(14, 3, 66);
+}
+.services-list div p{
+    color: rgb(18, 13, 29);
+}
 .services-list div i {
     font-size: 5rem;
     margin-bottom: 3rem;
@@ -418,8 +422,119 @@ form .btn{
 .container{
     padding: 10px 10%;
 }
-
-@media only screen and (max-width:60rem) {
+@media only screen and (max-width:1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 7px;
+    }
+    
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'poppins', sans-serif;
+    }
+    .container{
+        padding: 10px 10%;
+    }
+    .right ul{
+        background: #0d868f;
+        position: fixed;
+        top:0;
+        right: -20rem;
+        width: 20rem;
+        height: 100vh;
+        padding-top: 0rem;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .right ul li{
+        display: block;
+        margin: 1.5rem;
+    }
+    nav ul li a:hover {
+        color:rgb(6, 6, 85);
+        }
+    .right ul i{
+        position: absolute;
+        top: 2.6rem;
+        left: 2.6rem;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: right 0.5s;
+    }
+    .right .fa-solid{
+        font-size: 2.6rem;
+        display: block;
+        cursor: pointer;
+    }
+    .right .fa-solid:hover{
+        color: #8c63ec;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer ul{
+        justify-content: space-around;
+    }
+    hr{
+        border: 0;
+        background: rgb(168, 168, 222);
+        height: 0.2rem;
+        margin: 4rem 0rem;
+    }
+    #contact .row{
+        justify-content: center;
+    }
+    #about .row{
+        justify-content: space-around;
+    }
+    #about img{
+        margin: 0;
+        width: 40rem;
+    }
+    .contact-left p{
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: #34b6dd;
+    }
+    .contact-left p:hover{
+        color: #e2f7fd;
+    }
+    .contact-left p i{
+        display: none;
+    }
+    .rightSection{
+        display: block;
+    }
+    .rightSection img{
+        display: none;
+    }
+    .firstSection{
+        flex-direction: column;
+    }
+    .leftSection{
+        font-size: 2.2rem;
+     }
+     .leftSection .buttons{
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .leftSection .btnb{
+        display: inline-block;
+        padding: 1rem;
+        margin-bottom: 10px;
+        font-size:8px;
+        cursor:pointer;
+     }
+}
+@media only screen and (max-width:600px) {
     * {
         margin: 0;
         padding: 0;
@@ -485,5 +600,55 @@ form .btn{
         background: rgb(168, 168, 222);
         height: 0.2rem;
         margin: 4rem 0rem;
+    }
+    #contact .row{
+        justify-content: center;
+    }
+    #about .row{
+        justify-content: space-around;
+    }
+    #about img{
+        margin: 0;
+        width: 40rem;
+    }
+    .contact-left p{
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: #34b6dd;
+    }
+    .contact-left p:hover{
+        color: #e2f7fd;
+    }
+    .contact-left p i{
+        display: none;
+    }
+    .rightSection{
+        display: block;
+    }
+    .rightSection img{
+        display: none;
+    }
+    .firstSection{
+        flex-direction: column;
+    }
+    .leftSection{
+        font-size: 2.2rem;
+     }
+     .leftSection .buttons{
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .leftSection .btnb{
+        display: inline-block;
+        padding: 1rem;
+        margin-bottom: 10px;
+        font-size:8px;
+        cursor:pointer;
+     }
+}
+
+@media only screen and (max-width:400px) {
+    html{
+        font-size: 7.6px;
     }
 }

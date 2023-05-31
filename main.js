@@ -24,6 +24,6 @@ var typed = new Typed('#element', {
         sidemenu.style.right="0";
     }
     function closemenu(){
-        sidemenu.style.right="-200px";
+        sidemenu.style.right="-20rem";
     }
     //end scroll animation

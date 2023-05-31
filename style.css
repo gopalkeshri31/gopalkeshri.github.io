@@ -56,9 +56,9 @@ nav ul li a:hover {
 }
 #GK{
     background:linear-gradient(rgba(250, 246, 246, 0.6),#42828d);
-    border-radius: 4px;
+    border-radius: 0.4rem;
     color: #fcffff;
-    padding: 5px;
+    padding: 0.5rem;
 }
 #GK:hover{
     background:linear-gradient(rgba(228, 137, 137, 0.6),#6fd4e6);
@@ -82,16 +82,19 @@ nav ul li a:hover {
    font-size: 3.5rem;
 }
 .leftSection .buttons{
-    padding: 50px 0;
+    padding: 5rem 0;
 }
 .leftSection .btnb{
     padding: 1.2rem;
     background-color: rgb(27, 27, 104);
     color: white;
-    border: 2px solid white;
-    border-radius: 6px;
-    font-size:20px;
+    border: 0.2rem solid white;
+    border-radius: 0.6rem;
+    font-size:2rem;
     cursor:pointer;
+ }
+ .leftSection .btnb:hover{
+    background: rgb(25, 122, 248);
  }
  .leftSection .btnb a{
     text-decoration: none;
@@ -134,7 +137,7 @@ hr{
     width: 100%;
     height: 50.6rem;
     border-radius: 1.5rem;
-    margin-left: 70px;
+    margin-left: 7rem;
 }
 .about-col-2{
     flex-basis: 50%;
@@ -162,9 +165,9 @@ hr{
     content: '';
     position: absolute;
     width: 0;
-    height: 3px;
-    background-color:#ff004f;
-    bottom: -8px;
+    height: 0.3rem;
+    background-color:#251b83;
+    bottom: -0.8rem;
     left: 0;
     transition:0.5s
 }
@@ -178,7 +181,7 @@ hr{
 
 }
 .tab-contents ul li span{
-    color:red;
+    color:rgb(101, 45, 204);
     font-size: 2rem;
 }
 .tab-contents{
@@ -192,23 +195,26 @@ hr{
 footer{
     background-color: rgb(33, 33, 116);
     color: #ece8e8;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 .footer{
     display: flex;
-    padding: 23px 122px;
+    padding: 2.3rem 12.2rem;
     justify-content: space-evenly;
 }
 .footer ul{
     list-style: none;
 }
+.footer ul li h3{
+    color: #34b6dd;
+}
 .footer>div{
-    width: 223px;
+    width: 22.3rem;
 }
 footer .footer-rights{
     text-align: center;
     color: gray;
-    padding:12px 0 ;
+    padding:1.2rem 0 ;
 }
 .footer-link{
     text-decoration: none;
@@ -220,65 +226,65 @@ footer .footer-rights{
 /* footer css end  */
 /* services css start  */
 #services {
-    padding: 30px 0;
-    margin: 60px 190px;
+    padding: 3rem 0;
+    /* margin: 6rem 19rem; */
 }
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-row: 40px;
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-row: 4rem;
+    grid-gap: 4rem;
+    margin-top: 5rem;
 }
 
 .services-list div {
-    background-color: #4a1919;
-    padding: 40px;
-    font-size: 13px;
+    background-color: #422bc4;
+    padding: 4rem;
+    font-size: 1.3rem;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 5rem;
+    margin-bottom: 3rem;
 
 }
 
 .services-list div h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .services-list div:hover {
-    background: rgb(218, 148, 62);
-    transform: translateY(-10px);
+    background: rgb(72, 187, 223);
+    transform: translateY(-1rem);
 }
 /* services css end  */
 /* portfolio css start  */
 #portfolio{
-    padding: 80px 0;
-    margin: 0 190px;
+    padding: 8rem 0;
+    /* margin: 0 19rem; */
 }
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 4rem;
+    margin-top: 5rem;
 }
 
 .work {
-    border-radius: 10px;
+    border-radius: 1rem;
     position: relative;
     overflow: hidden;
 }
 
 .work img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: block;
     transition: transform .5s;
 }
@@ -286,9 +292,9 @@ footer .footer-rights{
 .layer {
     width: 100%;
     height: 0;
-    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background:linear-gradient(rgba(0,0,0,0.6),#532dfa);
     position: absolute;
-    border-radius: 10px;
+    border-radius: 1rem;
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -297,24 +303,24 @@ footer .footer-rights{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     transition: height 0.5s;
 }
 
 .layer h3 {
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .layer a {
-    margin-top: 20px;
+    margin-top: 2rem;
     color: rgb(224, 31, 31);
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
+    font-size: 1.8rem;
+    line-height: 6rem;
     background: white;
-    width: 60px;
-    height: 60px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     text-align: center;
 }
@@ -336,7 +342,7 @@ footer .footer-rights{
 /* contact us css start */
 .row{
     display: flex;
-    margin: 55px 90px;
+    /* margin: 5.5rem 9rem; */
 }
 .contact-left{
     flex-basis: 35%;
@@ -346,16 +352,16 @@ footer .footer-rights{
 }
 
 .contact-left p{
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 3rem;
+    font-size: 2rem;
 }
 .contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
+    color: #2714db;
+    margin-right: 1.5rem;
+    font-size: 2.5rem;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 .social-icons a{
     color: white;
@@ -366,23 +372,26 @@ footer .footer-rights{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px)
+    color: #2f1cd6;
+    transform: translateY(-0.5rem)
 }
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 5rem auto;
     width: fit-content;
-    border: 1px solid #ff004f;
-    padding:10px 40px;
-    border-radius: 6px;
+    border: 0.1rem solid #161ae4;
+    padding:1rem 4rem;
+    border-radius: 0.6rem;
     text-decoration:none ;
     color: beige;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 .btn.btn2{
     display: inline-block;
-    background:#ff004f ;
+    background:#3b1de9 ;
+}
+.btn.btn2:hover{
+    background: rgb(25, 122, 248);
 }
 .contact-right form{
     width: 100%;
@@ -392,51 +401,89 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #262626;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 1.2rem;
+    margin: 1rem 0;
     color: #fff;
-    font-size: 15px;
-    border-radius: 6px;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
 }
 form .btn{
-    padding: 14px 16px;
-    font-size: 18px;
-    margin-top:20px ;
+    padding: 1.4rem 1.6rem;
+    font-size: 1.8rem;
+    margin-top:2rem ;
     cursor: pointer;
 
 }
 /* contact us css end */
+.container{
+    padding: 10px 10%;
+}
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:60rem) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 8px;
+    }
+    
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'poppins', sans-serif;
+    }
+    .container{
+        padding: 10px 10%;
+    }
     .right ul{
-        background: #ff004f;
+        background: #0d868f;
         position: fixed;
         top:0;
-        right: -200px;
-        width: 200px;
+        right: -20rem;
+        width: 20rem;
         height: 100vh;
-        padding-top: 20px;
+        padding-top: 0rem;
         flex-direction: column;
         z-index: 2;
     }
     .right ul li{
         display: block;
-        margin: 15px;
+        margin: 1.5rem;
     }
+    nav ul li a:hover {
+        color:rgb(6, 6, 85);
+        }
     .right ul i{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 2.6rem;
+        left: 2.6rem;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 2rem;
         transition: right 0.5s;
     }
     .right .fa-solid{
-        font-size: 26px;
+        font-size: 2.6rem;
         display: block;
         cursor: pointer;
     }
     .right .fa-solid:hover{
         color: #8c63ec;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer ul{
+        justify-content: space-around;
+    }
+    hr{
+        border: 0;
+        background: rgb(168, 168, 222);
+        height: 0.2rem;
+        margin: 4rem 0rem;
     }
 }

@@ -418,6 +418,11 @@ form .btn{
     cursor: pointer;
 
 }
+#msg{
+    color: rgb(34, 228, 34);
+    margin-top: -3rem;
+    display: block;
+}
 /* contact us css end */
 .container{
     padding: 10px 10%;

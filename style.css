@@ -626,10 +626,10 @@ form .btn{
         display: block;
     }
     .rightSection img{
-        display: none;
+        display: block;
     }
     .firstSection{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .leftSection{
         font-size: 2.2rem;

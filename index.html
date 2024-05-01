@@ -64,10 +64,11 @@
                 <h1 id="subtitle">About Me</h1>
                 <p>Welcome to my portfolio! I am a passionate software developer dedicated to crafting innovative and efficient solutions. With a strong foundation in coding and a drive for continuous learning, I strive to create impactful software that enhances user experiences and solves complex problems.</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                 </div>
+
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Web designer</span><br>Knowledge about UI/UX Designing</li>
@@ -280,6 +281,17 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+    function opentab(event, tabname) {
+    for (tablink of x) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of y) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
 </script>
 
 </body>

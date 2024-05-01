@@ -1,246 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GK DEVS</title>
     <link rel="icon" href="GK.png">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1ec93368b5.js" crossorigin="anonymous"></script>
 </head>
+<body>
 
-<body class="bg-gray-100">
-
-    <!-- header start -->
-    <header>
-        <div class="bg-blue-500">
-            <nav class="container mx-auto py-4">
-                <div class="flex justify-between items-center">
-                    <div>
-                        <a class="text-white font-bold text-2xl" href="#"><span id="GK">GK</span> Devs</a>
-                    </div>
-                    <div class="flex items-center">
-                        <ul class="hidden md:flex space-x-4">
-                            <li class="nav-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="nav-item"><a class="text-white" href="#about">About</a></li>
-                            <li class="nav-item"><a class="text-white" href="#services">Services</a></li>
-                            <li class="nav-item"><a class="text-white" href="#contact">Contact</a></li>
-                        </ul>
-                        <i class="fa-solid fa-bars text-white md:hidden" onclick="openmenu()"></i>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- header end -->
-
-    <!-- hero start -->
-    <div id="hero" class="bg-white py-16">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
-            <div class="md:w-1/2 md:px-6">
-                <p class="text-lg md:text-xl">Hi, My name is <span class="text-purple-600"><i>Gopal</i></span> and I am a passionate</p>
-                <span id="element"></span>
-                <div class="mt-4">
-                    <button class="btnb bg-blue-500 text-white px-4 py-2 rounded-md mr-4"><a href="./img/gopal-keshri-cv.pdf" download>Download CV</a></button>
-                    <button class="btnb bg-blue-500 text-white px-4 py-2 rounded-md"><a href="https://github.com/gopalkeshri" target="_blank">Go to Github</a></button>
-                </div>
+<!-- header start -->
+<header>
+    <div class="top">
+        <nav class="navbar">
+            <div class="left">
+                <a class="navbar-brand" href="#"><b><span id="GK">GK</span> Devs</b></a>
             </div>
-            <div class="md:w-1/2 md:px-6 mt-8 md:mt-0">
-                <img src="./img/GK-devs-hero.png" alt="devs photo" class="w-full">
+            <div class="right">
+                <ul class="nav-list" id="sidemenu">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </div>
-        </div>
+        </nav>
     </div>
-    <!-- hero end -->
+</header>
+<!-- header end -->
 
-    <hr class="my-8">
-
-    <!-- about us start  -->
-    <div id="about" class="bg-gray-100 py-16">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="about-col-1">
-                    <img src="./img/gopal-keshri-pic.jpg" alt="Gopal Keshri" class="w-full">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="text-2xl md:text-3xl font-bold mb-4">About Me</h1>
-                    <p class="mb-4">Welcome to my portfolio! I am a passionate software developer dedicated to crafting innovative and efficient solutions. With a strong foundation in coding and a drive for continuous learning, I strive to create impactful software that enhances user experiences and solves complex problems.</p>
-                    <div class="tab-titles flex space-x-4 mb-4">
-                        <p class="tab-links active-link cursor-pointer" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links cursor-pointer" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links cursor-pointer" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web designer</span><br>Knowledge about UI/UX Designing</li>
-                            <li><span>Web Development</span><br>Knowledge about HTML, CSS, JavaScript and many web development Relative framework's</li>
-                            <li><span>App Development</span><br>Knowledge about Dart, Java and many app development Relative framework's</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021-22</span><br>As a freelancer. Work role is Web designer and Web developer</li>
-                            <li><span>2022-23</span><br>As a freelancer. Work role is App Development on Flutter framework</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2020-21</span><br>12th Pass to 8 CGPA</li>
-                            <li><span>2021-22</span><br>BCA 1 year Pass to 7.9 CGPA</li>
-                            <li><span>2022-23</span><br>BCA 2 year Pass to 8.5 CGPA</li>
-                        </ul>
-                    </div>
-                </div>
+<!-- hero start -->
+<div id="hero">
+    <section class="firstSection">
+        <div class="leftSection">
+            <p>Hi, My name is <span class="purple"><i>Gopal</i></span> and I am a passionate</p>
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btnb"><a href="./img/gopal-keshri-cv.pdf" download>Download CV</a></button>
+                <button class="btnb"><a href="https://github.com/gopalkeshri" target="_blank">Go to Github</a></button>
             </div>
         </div>
-    </div>
-    <!-- about us end  -->
-
-    <hr class="my-8">
-
-    <!-- services start  -->
-    <div id="services" class="bg-white py-16">
-        <div class="container mx-auto">
-            <h1 class="text-2xl md:text-3xl font-bold mb-8">My Services</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="service-item">
-                    <i class="fa-solid fa-code text-4xl text-blue-500 mb-4"></i>
-                    <h2 class="text-xl md:text-2xl font-bold mb-2">Web Design</h2>
-                    <p>Check out my web design portfolio to see some of my visually stunning and user-friendly website creations that blend aesthetics with functionality.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-globe text-4xl text-blue-500 mb-4"></i>
-                    <h2 class="text-xl md:text-2xl font-bold mb-2">Web Development</h2>
-                    <p>I specialize in creating dynamic and responsive websites that engage users and deliver a seamless browsing experience. From front-end design to back-end development, I harness the power of cutting-edge technologies to build robust and scalable web solutions.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-brands fa-android text-4xl text-blue-500 mb-4"></i>
-                    <h2 class="text-xl md:text-2xl font-bold mb-2">App Development</h2>
-                    <p>Transforming ideas into reality, I specialize in crafting dynamic and user-friendly mobile applications for iOS and Android platforms. From conceptualization to deployment, I offer end-to-end app development services tailored to meet your unique requirements.</p>
-                </div>
-            </div>
+        <div class="rightSection">
+            <img src="./img/GK-devs-hero.png" alt="devs photo">
         </div>
-    </div>
-    <!-- services end -->
+    </section>
+</div>
+<!-- hero end -->
 
-    <hr class="my-8">
+<hr>
 
-    <!-- Gallery start -->
-    <div id="portfolio" class="bg-gray-100 py-16">
-        <div class="container mx-auto">
-            <h1 class="text-2xl md:text-3xl font-bold mb-8">My Work</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="work">
-                    <img src="./img/GK-devs-myworks-1.png" alt="CRUD APP USING PHP" class="w-full">
-                    <div class="layer p-4 bg-white">
-                        <h3 class="text-lg md:text-xl font-bold">CRUD APP USING PHP</h3>
-                        <p class="mb-4">When I started learning PHP programming, my first project was a CRUD app.</p>
-                        <a href="https://github.com/gopalkeshri/crudapp_in_php.git" target="_blank"
-                            class="text-blue-500"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./img/GK-devs-myworks-2.png" alt="E-COMMERCE" class="w-full">
-                    <div class="layer p-4 bg-white">
-                        <h3 class="text-lg md:text-xl font-bold">E-COMMERCE</h3>
-                        <p class="mb-4">When I learned PHP language completely and it was my turn to make a project, I made an online shopping website.</p>
-                        <a href="https://github.com/gopalkeshri/crudapp_in_php.git" target="_blank"
-                            class="text-blue-500"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./img/GK-devs-myworks-3.jpeg" alt="MY PORTFOLIO" class="w-full">
-                    <div class="layer p-4 bg-white">
-                        <h3 class="text-lg md:text-xl font-bold">MY PORTFOLIO</h3>
-                        <p class="mb-4">This is the first portfolio website project of my coding career. It is live now. You can see it if you want to.</p>
-                        <a href="https://www.gopalkeshri.xyz/" target="_blank"
-                            class="text-blue-500"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+<!-- about us start  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./img/gopal-keshri-pic.jpg" alt="Gopal Keshri">
             </div>
-        </div>
-    </div>
-    <!-- Gallery end -->
-
-    <hr class="my-8">
-
-    <!-- Hire me start -->
-    <div id="contact" class="bg-white py-16">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="contact-left">
-                    <h1 class="text-2xl md:text-3xl font-bold mb-4">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>contact@gkdevs.xyz</p>
-                    <p><i class="fa-solid fa-phone"></i>+91-9409643361</p>
-                    <div class="social-icons">
-                        <a href="https://twitter.com/keshrigopal31" target="_blank"><i class="fa-brands fa-twitter text-blue-500"></i></a>
-                        <a href="https://www.instagram.com/keshrigopal.31" target="_blank"><i class="fa-brands fa-instagram text-blue-500"></i></a>
-                        <a href="https://github.com/gopalkeshri" target="_blank"><i class="fa-brands fa-github text-blue-500"></i></a>
-                        <a href="https://www.linkedin.com/in/gopal-keshri/" target="_blank"><i class="fa-brands fa-linkedin-in text-blue-500"></i></a>
-                    </div>
-                    <a href="/img/gopal-keshri-cv.pdf" download class="btn btn2 bg-blue-500 text-white">Download CV</a>
+            <div class="about-col-2">
+                <h1 id="subtitle">About Me</h1>
+                <p>Welcome to my portfolio! I am a passionate software developer dedicated to crafting innovative and efficient solutions. With a strong foundation in coding and a drive for continuous learning, I strive to create impactful software that enhances user experiences and solves complex problems.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" class="flex flex-col space-y-4">
-                        <input type="text" name="Name" placeholder="Enter Your Name" required class="input-box px-4 py-2 rounded-md">
-                        <input type="email" name="Email" placeholder="Enter Your Email" required class="input-box px-4 py-2 rounded-md">
-                        <input type="phone" name="Phone" placeholder="Enter Your Phone Number" required class="input-box px-4 py-2 rounded-md">
-                        <textarea name="Message" rows="6" placeholder="Enter Your Message" class="input-box px-4 py-2 rounded-md"></textarea>
-                        <button type="submit" class="btn btn2 bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hire me end -->
-
-    <!-- footer start -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="footer-1">
-                    <h3><span id="GK">GK</span> DEVELOPER</h3>
-                    <br>
-                    <h4>THE PORTFOLIO</h4>
-                </div>
-                <div class="footer-2">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><h3>Quick links</h3></li>
-                        <li><a class="footer-link" href="#top">Home</a></li>
-                        <li><a class="footer-link" href="#about">About</a></li>
-                        <li><a class="footer-link" href="#services">Services</a></li>
-                        <li><a class="footer-link" href="#contact">Contact</a></li>
+                        <li><span>Web designer</span><br>Knowledge about UI/UX Designing</li>
+                        <li><span>Web Development</span><br>Knowledge about HTML, CSS, JavaScript and many web development Relative framework's</li>
+                        <li><span>App Development</span><br>Knowledge about Dart, Java and many app development Relative framework's</li>
                     </ul>
                 </div>
-                <div class="footer-3">
+                <div class="tab-contents" id="experience">
                     <ul>
-                        <li><h3>Social links</h3></li>
-                        <li><a class="footer-link" href="https://www.linkedin.com/in/gopal-keshri/" target="_blank">LinkedIn</a></li>
-                        <li><a class="footer-link" href="https://www.instagram.com/keshrigopal.31/" target="_blank">Instagram</a></li>
-                        <li><a class="footer-link" href="https://github.com/gopalkeshri" target="_blank">Github</a></li>
-                        <li><a class="footer-link" href="https://twitter.com/keshrigopal31" target="_blank">Twitter</a></li>
+                        <li><span>2021-22</span><br>As a freelancer. Work role is Web designer and Web developer</li>
+                        <li><span>2022-23</span><br>As a freelancer. Work role is App Development on Flutter framework</li>
                     </ul>
                 </div>
-                <div class="footer-4">
+                <div class="tab-contents" id="education">
                     <ul>
-                        <li><h3>Project links</h3></li>
-                        <li><a class="footer-link" href="https://github.com/gopalkeshri/crudapp_in_php.git">CRUD APP</a></li>
-                        <li><a class="footer-link" href="https://github.com/gopalkeshri">E-COMMERCE</a></li>
-                        <li><a class="footer-link" href="https://github.com/gopalkeshri/MY_PORTFOLIO_GKDEVS.git">MY PORTFOLIO</a></li>
-                        <li><a class="footer-link" href="https://github.com/gopalkeshri/cpp_full_course.git">C++ BASIC COURSE</a></li>
+                        <li><span>2020-21</span><br>12th Pass to 8 CGPA</li>
+                        <li><span>2021-22</span><br>BCA 1 year Pass to 7.9 CGPA</li>
+                        <li><span>2022-23</span><br>BCA 2 year Pass to 8.5 CGPA</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-4">&copy; www.gkdevs.xyz | All rights reserved</div>
-    </footer>
-    <!-- footer end -->
+    </div>
+</div>
+<!-- about us end  -->
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="main.js"></script>
+<hr>
+
+<!-- services start  -->
+<div id="services">
+    <div class="container">
+        <h1 id="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2><b>Web Design</b></h2>
+                <p>Check out my web design portfolio to see some of my visually stunning and user-friendly website creations that blend aesthetics with functionality.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2><b>Web Development</b></h2>
+                <p>I specialize in creating dynamic and responsive websites that engage users and deliver a seamless browsing experience. From front-end design to back-end development, I harness the power of cutting-edge technologies to build robust and scalable web solutions.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2><b>App Development</b></h2>
+                <p>Transforming ideas into reality, I specialize in crafting dynamic and user-friendly mobile applications for iOS and Android platforms. From conceptualization to deployment, I offer end-to-end app development services tailored to meet your unique requirements.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services end -->
+
+<hr>
+
+<!-- Gallery start -->
+<div id="portfolio">
+    <div class="container">
+        <h1 id="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./img/GK-devs-myworks-1.png" alt="CRUD APP USING PHP">
+                <div class="layer">
+                    <h3>CRUD APP USING PHP</h3>
+                    <p>When I started learning PHP programming, my first project was a CRUD app.</p>
+                    <a href="https://github.com/gopalkeshri/crudapp_in_php.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/GK-devs-myworks-2.png" alt="E-COMMERCE">
+                <div class="layer">
+                    <h3>E-COMMERCE</h3>
+                    <p>When I learned PHP language completely and it was my turn to make a project, I made an online shopping website.</p>
+                    <a href="https://github.com/gopalkeshri/crudapp_in_php.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/GK-devs-myworks-3.jpeg" alt="MY PORTFOLIO">
+                <div class="layer">
+                    <h3>MY PORTFOLIO</h3>
+                    <p>This is the first portfolio website project of my coding career. It is live now. You can see it if you want to.</p>
+                    <a href="https://www.gopalkeshri.xyz/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Gallery end -->
+
+<hr>
+
+<!-- Hire me start -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>contact@gkdevs.xyz</p>
+                <p><i class="fa-solid fa-phone"></i>+91-9409643361</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/keshrigopal31" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/keshrigopal.31" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/gopalkeshri" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gopal-keshri/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="/img/gopal-keshri-cv.pdf" download class="btn btn2 ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <input type="phone" name="Phone" placeholder="Enter Your Phone Number" required>
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hire me end -->
+
+<!-- footer start -->
+<footer>
+    <div class="footer">
+        <div class="footer-1">
+            <h3><span id="GK">GK</span> DEVELOPER</h3>
+            <br>
+            <h4>THE PORTFOLIO</h4>
+        </div>
+        <div class="footer-2">
+            <ul>
+                <li><h3>Quick links</h3></li>
+                <li><a class="footer-link" href="#top">Home</a></li>
+                <li><a class="footer-link" href="#about">About</a></li>
+                <li><a class="footer-link" href="#services">Services</a></li>
+                <li><a class="footer-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <ul>
+                <li><h3>Social links</h3></li>
+                <li><a class="footer-link" href="https://www.linkedin.com/in/gopal-keshri/" target="_blank">LinkedIn</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/keshrigopal.31/" target="_blank">Instagram</a></li>
+                <li><a class="footer-link" href="https://github.com/gopalkeshri" target="_blank">Github</a></li>
+                <li><a class="footer-link" href="https://twitter.com/keshrigopal31" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-4">
+            <ul>
+                <li><h3>Project links</h3></li>
+                <li><a class="footer-link" href="https://github.com/gopalkeshri/crudapp_in_php.git">CRUD APP</a></li>
+                <li><a class="footer-link" href="https://github.com/gopalkeshri">E-COMMERCE</a></li>
+                <li><a class="footer-link" href="https://github.com/gopalkeshri/MY_PORTFOLIO_GKDEVS.git">MY PORTFOLIO</a></li>
+                <li><a class="footer-link" href="https://github.com/gopalkeshri/cpp_full_course.git">C++ BASIC COURSE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center mt-4">&copy; www.gkdevs.xyz | All rights reserved</div>
+</footer>
+<!-- footer end -->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="main.js"></script>
+
+<script>
+  //Start Type Animation
+  var typed = new Typed('#element', {
+      strings: ['Web Developer','App Developer','Web Designer','Software Developer'],
+      typeSpeed: 80,
+  });
+  // End Type Animation
+  //Start Tab Animation
+  var x = document.getElementsByClassName("tab-links");
+  var y = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+          for(tablink of x){
+              tablink.classList.remove("active-link");
+      }
+      for(tabcontent of y){
+              tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+  // End Tab Animation
+  //Start Scroll Animation
+  var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-20rem";
+    }
+    //end scroll animation
+    // form submit 
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyYiSC08PX2KGvUi240mgJ8NxLneBqPhCFMrQZ7aTs0U8Mbc98msIjzgxTxpmZgo8bE/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
-
 </html>
